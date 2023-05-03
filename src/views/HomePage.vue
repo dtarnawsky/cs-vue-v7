@@ -15,7 +15,7 @@
 
       <div id="container">
         <ion-button id="open-toast">Open Toast</ion-button>
-  <ion-toast trigger="open-toast" aria-label="Hello Global World!" message="Hello World!" :duration="3000" :icon="globe"></ion-toast>      
+  <ion-toast trigger="open-toast" message="Hello World!" :duration="3000"  :buttons="[{ icon: closeCircleOutline }]"></ion-toast>      
 </div>
     </ion-content>
   </ion-page>
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { IonButton, IonToast, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import { globe } from 'ionicons/icons';
+import { closeCircleOutline } from 'ionicons/icons';
 </script>
 
 <style scoped>
